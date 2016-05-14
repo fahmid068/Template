@@ -1,0 +1,395 @@
+/* Reset Css*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div,h1, h2, h3, h4, h5, h6, p,a,form,footer,ul,li,header,menu,nav,section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+aside,footer,header,menu,nav,section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+
+/* Base Css*/
+h1,h2,h3,h4,h5,h6{
+	text-transform:uppercase;
+}
+h1 span,h2 span {
+	color:#90b742;
+}
+
+.wrapper {
+	width:1670px;
+}
+header {
+	width:970px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.logo {
+	float:left;	
+}
+.logo img { 
+	width:287px;
+	padding:22px;	
+}
+.nav {
+	float:right;
+	padding-top:20px;
+}
+.nav li {
+	float:left;
+	font-family: Karla;
+	color: #1c1c1c;
+	font-size:18px;
+	font-weight:400;
+	line-height:18px;
+	padding:20px;
+	font-style:italic;
+}	
+.nav a {
+	text-decoration:none;
+	color:#000;
+}
+.nav a:hover {
+	color:orange;
+	font-size:20px;
+}
+.rotator {
+	width:1670px;
+	background-color:#9fc63f;
+	height: 400px;
+	overflow:hidden;
+	position:relative;
+}
+.rotator .prev {
+	background:url(images/left_icon.png) no-repeat;
+	display:block;
+	left:100px;
+	height:90px;
+	width:90px;
+	margin-top:-30px;
+	position:absolute;
+	top:50%;
+}
+.rotator .next {
+	background:url(images/right_icon.png) no-repeat;
+	display:block;
+	right:100px;
+	height:90px;
+	width:90px;
+	margin-top:-30px;
+	position:absolute;
+	top:50%;
+}
+.rotator .rotator-wrapper{
+	height:400px;
+	margin:0 auto;
+	width:970px;	
+	overflow:hidden;
+	position:relative;
+}
+.rotator ul {
+	position:absolute;
+	top:0;
+	width:2000em;
+}
+.rotator li {
+	float:left;
+	height:400px;
+	width:970px;
+	position:relative;	
+}
+.slide0 , .slide1 , .slide2 {
+	background:url(images/Slider.jpg) left center no-repeat;
+}
+.slide0 div, .slide1 div, .slide2 div {
+	color:#fff;
+	font-size:25px;
+	line-height:1.5em;
+	position:absolute;
+	right:0;
+	text-align:center;
+	top:75px;
+	width:350px;}
+.content {
+	width:970px;
+	margin:0 auto;
+	overflow:hidden; 					/* If it is going out of boundary then we use overflow hidden */
+}
+.content h1 {
+	font-family: Armata;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #1c1c1c;	
+	text-align:center;
+	padding-top:33px;
+	margin-right:30px;
+	padding-bottom:50px;
+	overflow:hidden;
+}
+.section{
+	width:970px;
+	margin:0 auto;
+	overflow:hidden;
+	margin-bottom:35px;
+}
+.section li {
+	float:left;
+	margin-right:60px;
+}
+.section li:last-child{
+	margin-right:0;
+}
+
+.section .disc-outer{
+	border:1px solid #dedede;
+	width:178px;
+	height:178px;
+	background:#fff;
+	border-radius:100%;		
+}
+.section .disc-inner{
+	background-color:#9fcf36;
+	width:140px;
+	height:140px;
+	margin:18px;
+	border-radius:100%
+}
+.section .icon {
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:140px;
+	width:140px;
+}
+.section .amaze {
+	background-image:url(images/amaze.png);
+}
+.phone{
+	background-image:url(images/telephone.png);
+}
+.mobile {
+	background-image:url(images/mobile.png)
+}
+.setting {
+	background-image:url(images/setting.png);
+}
+.section h3 {
+	font-family: Armata;
+	font-size:30px;
+	text-align:center;
+}
+.section p{
+	font-family:Armata;
+	font-size:18px;
+	text-align:center;
+	padding:10px;	
+}
+.portfolio {
+	width:970px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.portfolio h2{
+	font-size:25px;
+	font-family:Armata;
+	line-height:18px;
+	padding:12px 14px;
+}
+.portfolio_content{
+	margin:0 auto;
+	width:974px;
+	padding-top:30px;
+	padding-bottom:40px;
+	overflow:hidden;
+}
+.portfolio-item{
+	float:left;
+	width:450px;
+	margin-bottom:20px;
+	margin-right:33px;
+	border:1px solid #ebebeb;
+	padding-bottom:10px;
+}
+.portfolio-item img {
+	float:left;
+	margin-right:20px;
+	width:220px;
+	height:150px;
+}					/* We Can make this item with nth child sys but we prefer width and height*/
+.portfolio-item h4{	/* But width and height sys cant fully show portfolio left in chrome */
+	font-size:16px;
+	font-family:Armata;
+	line-height:18px;
+	margin-top:12px;
+	margin-bottom:12px;
+}
+.portfolio-item a {
+	text-decoration:none;
+	font-family:Karla;
+	font-size:14px;
+	padding:2px 8px;
+	margin-right:5px;
+	background:#9fc63f;
+	}
+.portfolio-item p{
+	font-size:15px;
+	font-family:Karla;
+	text-align:justify;
+	margin-top:10px;
+}
+.advertise_menu {
+	width:970px;
+	overflow:hidden;
+	margin:0 auto;
+	background-color:#f3f3f3;
+}
+
+.advertise_menu li {
+	float:left;
+	padding-right:15px;
+	padding-top:44px;
+	padding-bottom:100px;
+}
+.footer{
+	width:960px;
+	margin:0 auto;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+.about{
+	width:242px;
+	height:auto;
+	float:left;
+	margin-right:40px;
+	}
+.about h5 {
+	font-family:Armata;
+	font-size:18px;
+	margin-top:30px;
+	margin-bottom:15px;
+	color:#717172;
+}
+.about p {
+	font-size:14px;
+	font-family:Karla Bold;
+	text-align:justify;
+	width:220px;
+		color:#717172;
+}
+.social{
+	color:#717172;
+}
+.social li {
+	display:inline-block;
+	margin-right:10px;
+}
+.archives{
+	width:242px;
+	height:auto;
+	float:left;
+	
+}
+.archives h5{
+	color:#717172;
+	font-family:Armata;
+	font-size:18px;	
+	margin-top:27px;
+	margin-bottom:15px;	
+}
+.archives h6{
+	font-size:16px;
+	font-family:Karla;
+	margin-top:8px;	
+		color:#717172;	
+}
+.bg_dash {
+	border-bottom:2px dashed #dedede;
+	width:200px;
+	padding-bottom:10px;
+}
+.contact {
+	float:left;
+	width:210px;
+	height:auto;
+}
+.contact h5{
+	font-family:Armata;
+	font-size:18px;	
+	margin-top:27px;
+	color:#717172;
+}
+.contact .message {
+	background-image:url(images/message.png);
+	background-repeat:no-repeat;
+	height:30px;
+	margin-top:15px;
+}
+.contact .phone_icon {
+	background-image:url(images/phone_icon.png);
+	background-repeat:no-repeat;
+	height:38px;
+	margin-top:15px;
+}
+.contact .phone_contact {
+	background-image:url(images/phone_contact.png);
+	background-repeat:no-repeat;
+	height:38px;
+	margin-top:15px;
+}
+.contact p {
+	margin-left:36px;
+	font-size:13px;
+	font-family:Karla;
+	color:#717172;	
+}
+.sign_to{
+	float:left;
+}
+.sign_to h5 {
+	font-size:18px;
+	font-family:Armata;
+	color:#717172;
+	margin-top:28px;
+}
+.sign_to h6 {
+	font-size:15px;
+	font-family:Armata-Regular;
+	margin-top:20px;
+	display:block;
+	height:15px;
+	color:grey;
+}
+.base_footer {
+	margin:0 auto;
+	width:970px;
+	height:50px;
+	background-color:#202020;
+}
+.base_footer h6 {
+	color:white;
+	float:left;
+	padding:20px;
+	font-family:Karla;
+	font-size:14px;}
+.base_footer p {
+	color:white;
+	font-family:Karla;
+	font-size:14px;
+	float:right;
+	padding:20px;
+}
